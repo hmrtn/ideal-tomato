@@ -1,0 +1,27 @@
+---
+title: "Markdown Practice Activity"
+author: "Hannah Marton"
+date: "2025-09-11"
+output: pdf_document
+bibliography: references.bib
+---
+
+# Introduction
+
+This is my manuscript. I am writing text in **Markdown** format.
+
+I can write in **bold** and *italics*.
+
+I can add in-text citations [@bromanDataOrganizationSpreadsheets2018]
+
+# Methods
+
+## Field sites
+
+## Analysis
+
+# Results
+
+# Discussion
+
+# References
