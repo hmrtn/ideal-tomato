@@ -8,15 +8,21 @@ bibliography: references.bib
 
 # Introduction
 
-This is my manuscript. I am writing text in **Markdown** format.
+This is my manuscript for the my CIEE Productivity and Reproducibility project. I am writing text in "Markdown" format.
 
 I can write in **bold** and *italics*.
 
-I can add in-text citations [@bromanDataOrganizationSpreadsheets2018]
+I can add in-text citations, like these [@ramanujan2006a; @peters2004a; @juice2006a].
 
 # Methods
 
-## Field sites
+## Dataset
+
+This project uses data from 'lterdatasampler', an R package that provides sampler datasets for teaching and learning purposes [@horst2023].
+
+The package contains several sample datasets, but we will work with the "hbr_maples" data. "[This] dataset contains observations on sugar maple seedlings in untreated and calcium-amended watersheds at Hubbard Brook Experimental Forest in New Hampshire" [@horst2023].
+
+The data originates from "Health and mycorrhizal colonization response of sugar maple (*Acer saccharum*) seedlings to calcium addition in Watershed 1 at the Hubbard Brook Experimental Forest" [@juice2019].
 
 ## Analysis
 
