@@ -8,19 +8,19 @@
 
 **Updated by:** Hannah Marton
 
-This project is being completed as part of the Canadian Institute of Ecology and Evolution's Productivity and Reproducibility module. The goal of this project is to produce a reproducible mini-project.
+This project is being completed as part of the Canadian Institute of Ecology and Evolution's Productivity and Reproducibility module. The goal of this project is to gain experience producing a reproducible mini-project.
 
 **File structure:**
 
--   *Raw Data:* contains all raw data files (read-only)
+-   *00_rawdata:* contains all raw data files (read-only)
 
--   *Analysis:* contains all scripts and analysis of the data
+-   *01_scripts* contains all scripts and analysis of the data
 
--   *Out data:* contains all processed data files
+-   *02_outdata:* contains all processed data files
 
--   *Figures:* contains all plots and figures of the data
+-   *03_figures:* contains all plots and figures of the data
 
--   *Manuscript:* contains all versions of written lab reports
+-   *04_manuscript:* contains all versions of written lab reports
 
 **File naming conventions:**
 
@@ -34,4 +34,4 @@ This project is being completed as part of the Canadian Institute of Ecology and
 
 -   *Lab reports and manuscripts:* LastName_Project_File-contents_Version.file-type
 
-repository name: ideal-tomato
+GitHub repository name: ideal-tomato
