@@ -27,7 +27,7 @@ library(lterdatasampler)
 # The package contains several sample datasets, but we will work with the
 # hbr_maples data.
 
-# Data description: "Sugar maple seedlings at Hubbard Brook Experimental 
+# Dataset description: "Sugar maple seedlings at Hubbard Brook Experimental 
 # Forest (New Hampshire) in calcium-treated and reference watersheds in 
 # August 2003 and June 2004"
 
