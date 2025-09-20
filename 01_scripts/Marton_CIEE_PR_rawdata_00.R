@@ -2,8 +2,8 @@
 
 # Associated R project: CIEE_PR_Project 
 
-# Date created:** 2025-09-15
-# Created by:** Hannah Marton
+# Date created: 2025-09-15
+# Created by: Hannah Marton
 
 # Date updated:** 
 # Updated by:** 
