@@ -12,7 +12,7 @@ This is my manuscript for the my CIEE Productivity and Reproducibility project. 
 
 I can write in **bold** and *italics*.
 
-I can add in-text citations, like these [@ramanujan2006a; @peters2004a; @juice2006a].
+I can add in-text citations, like these [@ramanujan2006; @peters2004; @juice2006].
 
 # Methods
 
