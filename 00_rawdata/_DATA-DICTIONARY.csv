@@ -1,0 +1,12 @@
+Variable ID,Variable Name,Variable Definition,Variable Type,Allowable Values/Parameters,Notes
+year,year,the sampling year,date,"2003, 2004",YYYY format
+watershed,watershed,a factor denoting the watershed where the sample was collected,string,"W1 = calcium-treated, Reference = reference",
+elevation,elevation,a factor denoting the elevation of the transect,string,"Low = low elevation, Mid = mid elevation",
+transect,transect,a factor denoting the transect number within the watershed,string,"R1:6 =reference transect,  W1-1:6 = calcium-treated transect",
+sample,sample,a factor denoting the sample number within the transect,number,1:20,There are twenty samples in each transect
+stem_length,stem length,the height of the seedling in millimeters,number,Positive values with one decimal place,
+leaf1area,leaf 1 area,the area of the first sampled leaf in square centimeters,number,Positive values with three decimal places,
+leaf2area,leaf 2 area,the area of the second sampled leaf in square centimeters,number,Positive values with three decimal places,
+leaf_dry_mass,leaf dry mass,the dry mass of both sampled leaves in grams,number,Positive values with four decimal places,
+stem_dry_mass,stem dry mass,the dry mass of the stem in grams,number,Positive values with four decimal places,
+corrected_leaf_area,corrected leaf area,the area of both leaves in addition to the area removed for chlorophyll measurements in square centimeters,number,Positive values with three decimal places,
