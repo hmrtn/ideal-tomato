@@ -5,12 +5,13 @@
 # Date created: 2025-09-15
 # Created by: Hannah Marton
 
-# Date updated:** 
-# Updated by:** 
+# Date updated: 2025-09-21
+# Updated by: Hannah Marton
 
 # Introduction: This script is for acquiring data and saving it to a .csv 
 # file in the 00_rawdata folder. We are going to use data from 'lterdatasampler',
-# a package that provides sampler datasets for teaching purposes. 
+# a package that provides sampler datasets for teaching purposes. This script
+# will also read the _DATA-DICTIONARY file into your Global Environment.
 
 # clear your workspace
 rm(list=ls())
@@ -43,5 +44,11 @@ write.csv(hbr_maples, "~/Desktop/CIEE_PR/CIEE_PR_Project/00_rawdata/hbr_maples.c
 
 # You should now see a .csv file called "hbr_maples.csv" in your '00_rawdata'
 # folder.
+
+# load the Data Dictionary into your Global Environment using
+DATA_DICTIONARY <- read.csv("00_rawdata/_DATA-DICTIONARY.csv", header = TRUE)
+
+# You should now see the DATA_DICTIONARY in your Global Environment, which 
+# contains essential information on variables in the dataset.
 
 # End of script.
