@@ -4,11 +4,31 @@
 
 **Created by:** Hannah Marton
 
-**Date updated:** 2025-09-15
+**Date updated:** 2025-09-20
 
 **Updated by:** Hannah Marton
 
 This project is being completed as part of the Canadian Institute of Ecology and Evolution's Productivity and Reproducibility module. The goal of this project is to gain experience producing a reproducible mini-project.
+
+**Directory Structure**
+
+CIEE_PR_Project/\
+├── \_README.md\
+├── .gitignore\
+├── 00_rawdata/\
+│ ├── \_README.md\
+│ ├── \_DATA-DICTIONARY.md\
+│ └── hbr_maples.csv\
+├── 01_scripts/\
+│ ├── CIEE_PR_rep_tut00.R\
+│ └── Marton_CIEE_PR_rawdata_00.R\
+├── 02_outdata\
+├── 03_figures\
+└── 04_manuscript/\
+│ ├── Marton_CIEE_PR_Manuscript-Draft_00.Rmd\
+│ ├── references.bib\
+│ └── rendered/\
+├────└── Marton_CIEE_PR_Manuscript-Draft_00.pdf
 
 **File structure:**
 
