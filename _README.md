@@ -56,6 +56,6 @@ CIEE_PR_Project/\
 
 -   *Lab reports and manuscripts:* LastName_Project_File-contents_Version.file-type
 
--   *Preregistration:* LastName_Project_File-contents.file-type
+-   *Preregistration:* LastName_Project_File-content_Versions.file-type
 
 GitHub repository name: ideal-tomato
