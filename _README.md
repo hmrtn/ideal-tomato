@@ -42,6 +42,8 @@ CIEE_PR_Project/\
 
 -   *04_manuscript:* contains all versions of written lab reports
 
+-   *05_preregistration:* contains the preregistration template and information
+
 **File naming conventions:**
 
 -   *Raw data:* File-contents.file-type
@@ -53,5 +55,7 @@ CIEE_PR_Project/\
 -   *Figures and plots:* LastName_Project_Figure-title_Version.file-type
 
 -   *Lab reports and manuscripts:* LastName_Project_File-contents_Version.file-type
+
+-   *Preregistration:* LastName_Project_File-contents.file-type
 
 GitHub repository name: ideal-tomato
