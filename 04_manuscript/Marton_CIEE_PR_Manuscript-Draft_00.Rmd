@@ -1,18 +1,26 @@
 ---
-title: "Markdown Practice Activity"
+title: "CIEE Productivity and Reproducibility Draft Manuscript"
 author: "Hannah Marton"
 date: "2025-09-11"
 output: pdf_document
 bibliography: references.bib
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+```
+
+```{r packages, include=FALSE}
+library(tidyverse)
+library(tinytex)
+library(lterdatasampler)
+```
+
 # Introduction
 
-This is my manuscript for the my CIEE Productivity and Reproducibility project. I am writing text in "Markdown" format.
+This is my draft manuscript for the my CIEE Productivity and Reproducibility project. I am learning how to write text in "Markdown" format. I can write in **bold** and *italics*.
 
-I can write in **bold** and *italics*.
-
-I can add in-text citations, like these [@ramanujan2006; @peters2004; @juice2006].
+Acid rain leaches calcium out of the soil, a nutrient critical to the growth of the sugar maple (*Acer saccharum*). This lack of calcium leads to the soil turning more acidic, and creates a stressful environment for the species [@ramanujan2006]. We will use the Hubbard Brook Experimental Forest Sugar Maples ("hbr_maples") dataset from the 'lterdatasampler' package to explore the addition of calcium on sugar maple seedling growth.
 
 # Methods
 
@@ -22,12 +30,43 @@ This project uses data from 'lterdatasampler', an R package that provides sample
 
 The package contains several sample datasets, but we will work with the "hbr_maples" data. "[This] dataset contains observations on sugar maple seedlings in untreated and calcium-amended watersheds at Hubbard Brook Experimental Forest in New Hampshire" [@horst2023].
 
-The data originates from "Health and mycorrhizal colonization response of sugar maple (*Acer saccharum*) seedlings to calcium addition in Watershed 1 at the Hubbard Brook Experimental Forest" [@juice2019].
+The data originates from "Health and mycorrhizal colonization response of *Acer saccharum* seedlings to calcium addition in Watershed 1 at the Hubbard Brook Experimental Forest" [@juice2019].
+
+```{r readrawdata, include=FALSE}
+data("hbr_maples")
+write.csv(hbr_maples, "../00_rawdata/hbr_maples.csv",
+          row.names = FALSE)
+```
 
 ## Analysis
 
+I can do a small data transformation for practice here.
+
+\newpage
+
 # Results
+
+Let's make a simple plot that compares sugar maple seedling height in the untreated and calcium treated watersheds.
+
+```{r ggplot, echo=FALSE, fig.cap="*Acer saccharum* seedling height in untreated (Reference) and treated (Calcium addition) watersheds.", fig.pos='H'}
+library(tidyverse)
+ggplot(hbr_maples, aes(x = watershed, y = stem_length, colour = watershed)) +
+  geom_jitter(
+    aes(color = watershed),
+    alpha = 0.5,
+    show.legend = FALSE,
+    position = position_jitter(width = 0.2, seed = 0)) +  
+  geom_boxplot(alpha = 0.2, outlier.shape = NA) +     
+  facet_wrap(~ year) +
+  theme_bw() +
+  labs(x = "Watershed", y = "Stem length (mm)") +
+  scale_x_discrete(labels = c("W1" = "Calcium addition", "Reference" = "Reference")) +
+  scale_color_manual(values = c("W1" = "springgreen4", "Reference" = "peachpuff4")) 
+```
 
 # Discussion
 
+This is where I'd write my discussion. I can add more citations here [@peters2004; @juice2006].
+
+\newpage
 # References
