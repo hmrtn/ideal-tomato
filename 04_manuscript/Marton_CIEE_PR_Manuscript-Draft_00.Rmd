@@ -14,6 +14,7 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(tidyverse)
 library(tinytex)
 library(lterdatasampler)
+library(knitr)
 ```
 
 # Introduction
@@ -40,7 +41,24 @@ write.csv(hbr_maples, "../00_rawdata/hbr_maples.csv",
 
 ## Analysis
 
-I can do a small data transformation for practice here.
+I can do a small data transformation for practice here. Let's create a table with the mean, median, and standard deviation (sd) of seedling height in the untreated and treated watersheds.
+
+```{r summarystats, include=FALSE}
+height_summary <- hbr_maples %>% # use the data from hbr_maples
+  drop_na(stem_length) %>% # remove NA values from dataset 
+  group_by(year, watershed) %>% # group data by year and watershed
+  summarize(
+    mean_height = mean(stem_length),
+    median_height = median(stem_length),
+    sd_height = sd(stem_length),
+    n = n()
+  )
+```
+
+```{r table}
+kable(height_summary, col.names = c('Year', 'Watershed', 'Mean', 'Median', 'SD', 'n'), Caption = "Summary statistics of *Acer saccharum* seedling height in untreated (Reference) and treated (Calcium addition) watersheds")
+```
+
 
 \newpage
 
@@ -69,4 +87,5 @@ ggplot(hbr_maples, aes(x = watershed, y = stem_length, colour = watershed)) +
 This is where I'd write my discussion. I can add more citations here [@peters2004; @juice2006].
 
 \newpage
+
 # References
