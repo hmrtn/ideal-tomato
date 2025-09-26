@@ -1,19 +1,25 @@
-**Folder name:** 00_rawdata
+This \_README_rawdata.md file contains information on the contents of the 00_rawdata folder.
 
-**Date created:** 2025-09-20
-
+**Date created:** 2025-09-20\
 **Created by:** Hannah Marton
 
-**Date updated:** 2025-09-21
-
+**Date updated:** 2025-09-21\
 **Updated by:** Hannah Marton
 
-**Folder contents:**
+### **Folder contents:**
 
 -   hbr_maples.csv: a **read-only** file of the raw data. The R script that acquires the raw data is found in the 01_scripts folder.
--   \_DATA-DICTIONARY.md: a file including essential information on variables in the dataset.
+-   \_DATA-DICTIONARY.md: a file including **essential information on variables** in the dataset.
+
+### **Dataset information:**
 
 **lterdatasampler description of the hbr_maples dataset:** "Growth of sugar maples (Acer saccharum), known for their maple syrup and iconic leaf shape, can be stunted due to soil acidification from prolonged acid rain, which leaches calcium - a nutrient important for plant growth - from soils and stresses maple seedlings. To investigate the impact of soil calcium supplementation on sugar maple seedling growth, Stephanie Juice, Tim Fahey and colleagues at Hubbard Brook Long Term Ecological Research (LTER) site recorded “general sugar maple germinant health by height, leaf area, biomass, and chlorophyll content” for seedlings in untreated and previously calcium-treated watersheds. By comparing seedling growth in calcium-treated versus untreated watersheds, calcium impacts on sugar maple seedling growth can be explored." (Horst & Brun, 2023)
+
+**Dataset variables:** See \_DATA-DICTIONARY.md for variable names and essential information. To load it in R using the `here` package, run this command in your console:
+
+```         
+DATA_DICTIONARY <- read.csv(here("00_rawdata", "_DATA-DICTIONARY.csv"), header = TRUE)
+```
 
 **Date of data collection:** August 2003 - June 2004
 
