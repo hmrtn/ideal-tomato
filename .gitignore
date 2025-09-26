@@ -40,6 +40,9 @@ vignettes/*.pdf
 .DS_Store
 **/.DS_Store
 
+# LaTex temporary files 
+texput.log
+
 # R Environment Variables
 .Renviron
 
