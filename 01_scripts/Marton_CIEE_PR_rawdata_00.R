@@ -13,17 +13,13 @@
 # a package that provides sampler datasets for teaching purposes. This script
 # will also read the _DATA-DICTIONARY file into your Global Environment.
 
-# clear your workspace
-rm(list=ls())
+# NOTE: before continuing with this script, you must first run the 
+# renv::restore() command in the _README.md file to ensure required packages
+# have been installed.
 
-# set working directory
-setwd("~/Desktop/CIEE_PR/CIEE_PR_Project")
-
-# install the CRAN version of lterdatasampler
-install.packages("lterdatasampler")
-
-# call up the package
-library(lterdatasampler)
+# load required packages 
+library(lterdatasampler) # contains sampler datasets
+library(here) # for reproducible, relative file paths
 
 # The package contains several sample datasets, but we will work with the
 # hbr_maples data.
@@ -35,18 +31,14 @@ library(lterdatasampler)
 # load the data into your Global Environment
 data("hbr_maples")
 
-# save the data as a .csv in the 00_rawdata folder using 
-# write.csv(dataframe, "~/Project-folder-path/Rawdata-name.csv",
-#         row.names = FALSE)
-
-write.csv(hbr_maples, "~/Desktop/CIEE_PR/CIEE_PR_Project/00_rawdata/hbr_maples.csv",
-          row.names = FALSE)
+# save the data as a .csv in the 00_rawdata folder 
+write.csv(hbr_maples, here("00_rawdata", "hbr_maples.csv"), row.names = FALSE)
 
 # You should now see a .csv file called "hbr_maples.csv" in your '00_rawdata'
 # folder.
 
-# load the Data Dictionary into your Global Environment using
-DATA_DICTIONARY <- read.csv("00_rawdata/_DATA-DICTIONARY.csv", header = TRUE)
+# load the Data Dictionary into your Global Environment 
+DATA_DICTIONARY <- read.csv(here("00_rawdata", "_DATA-DICTIONARY.csv"), header = TRUE)
 
 # You should now see the DATA_DICTIONARY in your Global Environment, which 
 # contains essential information on variables in the dataset.
