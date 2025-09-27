@@ -14,21 +14,18 @@ This project is being completed as part of the Canadian Institute of Ecology and
 ## **Instructions**
 
 1.  To reproduce outputs, download the ZIP file "CIEE_PR_Project.zip" and unzip to your local storage.
+
 2.  Open the RStudio project called "CIEE_PR_Project.Rproj"
-3.  If the `renv` package is not yet installed on your RStudio, install the latest version using the following commands in your console:
 
-```         
-if(!requireNamespace("remotes")) {
-install.packages("remotes")
-}
+3.  If the renv package is not yet installed on your RStudio, install the latest version using the following commands in your console:
+
+if (!requireNamespace("remotes", quietly = TRUE)) install.packages("remotes")
+
 remotes::install_github("rstudio/renv")
-```
 
-4.  Once `renv` is installed, you can restore the required package versions for this project using the following command in your console:
+4.  Once renv is installed, you can restore the required package versions for this project using the following command in your console:
 
-```         
 renv::restore()
-```
 
 5.  You may now work through the project as you wish. The draft manuscript RMD script is located in the "04_manuscript" folder. Individual scripts are in the "01_scripts" folder.
 
