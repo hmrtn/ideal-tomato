@@ -17,8 +17,11 @@ This \_README_rawdata.md file contains information on the contents of the 00_raw
 
 **Dataset variables:** See \_DATA-DICTIONARY.md for variable names and essential information. To load it in R using the `here` package, run this command in your console:
 
-```         
+```
+
+library(here)
 DATA_DICTIONARY <- read.csv(here("00_rawdata", "_DATA-DICTIONARY.csv"), header = TRUE)
+
 ```
 
 **Date of data collection:** August 2003 - June 2004

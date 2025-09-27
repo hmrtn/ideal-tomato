@@ -18,9 +18,10 @@ This project is being completed as part of the Canadian Institute of Ecology and
 3.  If the `renv` package is not yet installed on your RStudio, install the latest version using the following commands in your console:
 
 ```         
-if(!requireNamespace("remotes"))
-    install.packages("remotes")
-remotes::install_github(rstudio/renv")
+if(!requireNamespace("remotes")) {
+install.packages("remotes")
+}
+remotes::install_github("rstudio/renv")
 ```
 
 4.  Once `renv` is installed, you can restore the required package versions for this project using the following command in your console:
