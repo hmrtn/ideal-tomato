@@ -11,6 +11,9 @@ library(tidyverse)
 library(tinytex)
 library(lterdatasampler)
 library(knitr)
+library(here)
+library(rmarkdown)
+library(yaml)
 ```
 
 ```{r setup, include=FALSE}

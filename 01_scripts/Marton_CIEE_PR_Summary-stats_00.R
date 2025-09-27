@@ -10,7 +10,7 @@
 
 # Introduction: This script will use the 'hbr_maples' data to create a table 
 # with some basic summary statistics for seedling leaf dry mass. The table
-# will be saved in the 02_outdata folder.
+# will be saved in the '02_outdata' folder.
 
 # NOTE: before continuing with this script, you must first run the 
 # renv::restore() command in the _README.md file to ensure required packages
