@@ -43,6 +43,9 @@ vignettes/*.pdf
 # LaTex temporary files 
 texput.log
 
+# renv library
+renv/library/
+
 # R Environment Variables
 .Renviron
 
