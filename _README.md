@@ -1,15 +1,17 @@
 ## **READ ME FIRST**
 
 This is a public repository for the materials associated with the following project:\
-**Canadian Institute of Ecology and Evolution Productivity and Reproducibility Project (CIEE_PR_Project)**
+**CIEE PR Project: Addition of calcium on sugar maple (*Acer saccharum*) seedling growth.**
 
 **Date created:** 2025-09-04\
 **Created by:** Hannah Marton
 
-**Date updated:** 2025-09-26\
+**Date updated:** 2025-09-29\
 **Updated by:** Hannah Marton
 
-This project is being completed as part of the Canadian Institute of Ecology and Evolution's (CIEE) Productivity and Reproducibility module. The goal of this project is to gain experience producing a reproducible mini-project.
+This project is being completed as part of the Canadian Institute of Ecology and Evolution's (CIEE) Productivity and Reproducibility (PR) module. The goal of this project is to gain experience producing a reproducible mini-project.
+
+Acid rain leaches calcium out of the soil, a nutrient critical to the growth of the sugar maple (*Acer saccharum*). This lack of calcium contributes to soil acidification, and creates a stressful environment for the species. We use the Hubbard Brook Experimental Forest Sugar Maples (“hbr_maples”) dataset from the ‘lterdatasampler’ package to explore the addition of calcium on sugar maple seedling growth.
 
 ## **Instructions**
 
@@ -31,7 +33,7 @@ renv::restore()
 
 6.  For reading accessibility, you can 'knit' the RMD and MD scripts to PDF using the knit function.
 
-7. Note: if the command renv::restore() fails to install the R package 'tinytex', you may get an error when running the manuscript RMD script if LaTex is not installed. Follow the prompts given by renv, or use tinytex::install_tinytex() to install.
+7.  Note: if the command renv::restore() fails to install the R package 'tinytex', you may get an error when running the manuscript RMD script if no LaTeX disribution is installed. Follow the prompts by renv to install a LaTeX distribution such as 'tinytex', using tinytex::install_tinytex() to install.
 
 ## **Contents**
 
@@ -45,7 +47,7 @@ renv::restore()
 
 -   *03_figures:* folder that contains all plots and figures of the data
 
--   *04_manuscript:* folder that contains all versions of written lab reports, a references.bib file, and a rendered folder with .pdf file manuscripts
+-   *04_manuscript:* folder that contains the manuscript draft, a references.bib file, a citation style language file, and a rendered folder with the .pdf file manuscript
 
 -   *05_preregistration:* folder that contains the filled out preregistration template and rendered .pdf
 
@@ -68,3 +70,13 @@ renv::restore()
 -   *Manuscripts:* LastName_Project_File-contents_Version.file-type
 
 -   *Preregistration:* LastName_Project_File-content_Versions.file-type
+
+## **Citations**
+
+To cite this project, please use: Marton, H. (2025, September 29). *CIEE PR Project: Addition of calcium on sugar maple (Acer saccharum) seedling growth.* Retrieved from osf.io/trf2d
+
+## **Notes**
+
+-   The renv lockfile 'renv.lock' was last updated with the project dependencies on 2025-09-29.
+
+-   The citation style language (CSL) used for the manuscript draft, 'ecology-letters.csl', was last updated on GitHub on 2023-10-11.
