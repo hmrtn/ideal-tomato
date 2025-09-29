@@ -51,7 +51,7 @@ renv::restore()
 
 -   *05_preregistration:* folder that contains the filled out preregistration template and rendered .pdf
 
--   *\_README.md*: (this file) contains essential information on the materials included in the repository and how to use them
+-   *_README.md*: (this file) contains essential information on the materials included in the repository and how to use them
 
 -   *.gitignore*: tells git to only track the files needed for reproducibility
 
