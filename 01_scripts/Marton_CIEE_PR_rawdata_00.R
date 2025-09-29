@@ -38,7 +38,7 @@ write.csv(hbr_maples, here("00_rawdata", "hbr_maples.csv"), row.names = FALSE)
 # folder.
 
 # load the Data Dictionary into your Global Environment 
-DATA_DICTIONARY <- read.csv(here("00_rawdata", "_DATA-DICTIONARY.csv"), header = TRUE)
+DATA_DICTIONARY_rawdata <- read.csv(here("00_rawdata", "_DATA-DICTIONARY_rawdata.csv"), header = TRUE)
 
 # You should now see the DATA_DICTIONARY in your Global Environment, which 
 # contains essential information on variables in the dataset.

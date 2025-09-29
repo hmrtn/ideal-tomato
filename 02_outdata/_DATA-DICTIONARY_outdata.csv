@@ -1,0 +1,7 @@
+﻿Variable ID,Variable Name,Variable Definition,Variable Type,Allowable Values/Parameters,Notes
+year,year,the sampling year,date,"2003, 2004",YYYY format
+watershed,watershed,a factor denoting the watershed where the sample was collected,string,"W1 = calcium-treated, Reference = reference",
+mean_height,mean height,mean height of the seedlings in millimeters,number,Positive values with five decimal places,
+median_height,median height,median height of the seedlings in millimeters,number,Positive values with two decimal places,
+sd_height,standard deviation of the height,standard deviation of the seedling heights in millimeters,number,Positive values with two decimal places,
+n,sample size,the sample size of the group ,number,Positive value between 1-120,

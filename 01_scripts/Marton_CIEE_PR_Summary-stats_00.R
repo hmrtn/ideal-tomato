@@ -41,4 +41,11 @@ write.csv(height_summary, here("02_outdata", "Height-summary_00.csv"), row.names
 # You should now see the the "Height-summary_00.csv" summary table in 
 # the 02_outdata folder.
 
+# load the Data Dictionary into your Global Environment 
+DATA_DICTIONARY_outdata <- read.csv(here("02_outdata", "_DATA-DICTIONARY_outdata.csv"), header = TRUE)
+
+# You should now see the DATA_DICTIONARY_outdata in your Global Environment, which 
+# contains essential information on variables in the dataset.
+
+
 # End of script.
