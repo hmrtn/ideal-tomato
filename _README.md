@@ -31,6 +31,8 @@ renv::restore()
 
 6.  For reading accessibility, you can 'knit' the RMD and MD scripts to PDF using the knit function.
 
+7. Note: if the command renv::restore() fails to install the R package 'tinytex', you may get an error when running the manuscript RMD script if LaTex is not installed. Follow the prompts given by renv, or use tinytex::install_tinytex() to install.
+
 ## **Contents**
 
 **File structure:**
